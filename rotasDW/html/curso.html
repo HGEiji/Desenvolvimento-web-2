@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade DW</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: "Cairo", sans-serif;
+    background: #f2f2f2;
+  }
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content:space-between;
+    align-items: baseline;
+    background-color: black;
+    color: #f2f2f2;
+    padding: 5px;
+}
+
+.botao {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-content: space-evenly;
+  width: 100px;
+  margin: auto;
+  border: none;
+  border-radius: 5px;
+}
+.corpo{
+  padding: 70px;
+  width: 80%;
+  margin: auto;
+}
+
+img{
+  width: 35%;
+  height: auto;
+  border: 0px solid #ddd;
+  display: block;
+  margin: auto;
+  padding: 5px;
+  border-radius: 10px;
+  float: right;
+  margin-right: 20px;
+}
+p{
+  text-align: left;
+  line-height: 25px;
+}
+    </style>
+</head>
+<body>
+    <div >
+        <nav class = "header">
+        <h1>Atividade</h1>
+        <nav>
+            <button class="botaoNav">Cadastro</button>
+        </nav>
+    </div>
+
+    <div class ="corpo"> 
+        <figure>
+            <img src="https://img.freepik.com/free-vector/code-typing-concept-illustration_114360-3581.jpg" alt="">
+        </figure>
+        <h1>Desenvolvimento de Software Multiplataforma</h1>
+        <p>O currículo do Curso Superior de Tecnologia Desenvolvimento de Software Multiplataforma 
+            do eixo tecnológico Informação e Comunicação oferece disciplinas como Matemática para Computação, 
+            Álgebra Linear, Redação Técnica e Ética Profissional e Patente, Metodologias Ágeis para Gestão de Projetos 
+            de Software, Inglês, além de conhecimentos mais específicos da área como: Algoritmo e Lógica de Programação, 
+            Programação para Desktop, Programação para Dispositivos Móveis, Programação para Web, Experiência do Usuário,
+             Computação em Nuvem, Inteligência Artificial, Segurança da Informação, Internet das Coisas, Banco de Dados e
+              Engenharia de Software. O conteúdo do curso prepara os alunos para desenvolver software para diversas plataformas,
+               tais como Web, Desktop, Móvel, em Nuvem Internet das Coisas, empregando conceitos de Segurança da Informação e Inteligência
+                Artificial, além de integração e entrega contínua de software, visando desenvolver soluções de software que atendam os 
+                critérios de qualidade exigidos pelo mercado.</p>
+        <div class="botao">
+            <button id="btnVoltar">voltar</button>
+    </div>    
+    <script>
+        function irVoltar(){
+        window.location.href="index.html"
+        }
+          document.getElementById("btnVoltar").onclick =irVoltar
+    </script>    
+</body>
+</html>

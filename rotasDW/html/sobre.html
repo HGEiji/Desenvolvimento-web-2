@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade DW</title>
+    
+    <style>
+
+body {
+    margin: 0;
+    font-family: "Cairo", sans-serif;
+    background: #f2f2f2;
+  }
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content:space-between;
+    align-items: baseline;
+    background-color: black;
+    color: #f2f2f2;
+    padding: 5px;
+}
+
+.botao {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-content: space-evenly;
+  width: 100px;
+  margin: auto;
+  border: none;
+  border-radius: 5px;
+}
+.corpo{
+  padding: 70px;
+  width: 80%;
+  margin: auto;
+}
+
+img{
+  width: 35%;
+  height: auto;
+  border: 0px solid #ddd;
+  display: block;
+  margin: auto;
+  padding: 5px;
+  border-radius: 10px;
+  float: right;
+  margin-right: 20px;
+}
+p{
+  text-align: left;
+  line-height: 25px;
+}
+    </style>
+</head>
+<body>
+    <div >
+        <nav class = "header">
+        <h1>Atividade</h1>
+        <nav>
+            <button class="botaoNav">Cadastro</button>
+        </nav>
+    </div>
+
+    <div class ="corpo"> 
+        <figure>
+            <img src="https://www.fatecclub.gregmaster.com.br/wp-content/uploads/2018/09/logo-fatec.png" alt="">
+        </figure>
+        <h1>Sobre</h1>
+        <p>Idealizada por Antônio Francisco de Paula Sousa, as Fatecs têm como objetivo formar tecnólogos, profissionais 
+            cujas áreas de atuação são mais específicas em relação às demais modalidades de graduação (Bacharelado e licenciatura). 
+            Seus cursos de graduação são amplamente reconhecidos pelo mercado de trabalho.
+            As Fatecs são importantes instituições brasileiras de ensino superior, sendo pioneiras na graduação de tecnólogos.
+             Elas estão localizadas em diversas cidades paulistas, com cinco campi na capital e várias outras unidades na Grande São Paulo,
+              interior e litoral. </p>
+        <div class="botao">
+            <button id="btnVoltar">voltar</button>
+    </div>   
+    <script>
+    function irVoltar(){
+    window.location.href="index.html"
+    }
+    document.getElementById("btnVoltar").onclick =irVoltar
+    </script>     
+</body>
+</html>
